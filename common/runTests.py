@@ -134,7 +134,7 @@ def getArgs() :
   keep = getOption("-k")
   return (noOutput, rounds, addToDatabase, processors, keep)
 
-def timeAllArgs(runProgram, problem, checkProgram, dataDir, tests, keepInputData=False) :
+def timeAllArgs(runProgram, problem, checkProgram, dataDir, tests, keepInputData=True) :
   keepData = keepInputData
   (noOutput, rounds, addToDatabase, procs, keep) = getArgs()
   keep = keepInputData or keep
